@@ -1,0 +1,446 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+* {
+  box-sizing: border-box;
+} 
+::placeholder{
+  font-size: 0.7rem;
+}
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+.m-0{
+  margin: 0;
+}
+
+.text-secondary {
+  color: #7447BE;
+}
+.text-red{
+  color: red;
+}
+
+.btn {
+  border: 2px solid #7447BE;
+  background-color: #7447BE;
+  font-weight: bold;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  width: 8rem;
+  transition:all 0.2s ease-in-out;
+}
+.btn:hover{
+  border: 2px solid #7447BE;
+  background-color: transparent;
+  color: #7447BE;
+}
+.btn-inverted{
+  color: #7447BE;
+  font-weight: bold;
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  width: 8rem;
+  border: 2px solid white;
+  transition:all 0.2s ease-in-out;
+}
+.btn-inverted:hover{
+  background: transparent;
+  color: white;
+}
+.btn-container > *{
+  margin: 0rem 0.5rem;
+}
+
+/* navbar css starts  */
+.navbar {
+  height: 4rem;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  background-color: transparent;
+}
+
+.navbarInner {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbarInnerLeft {
+  height: 100%;
+}
+
+.navbarInnerRight {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+
+.hamburgerIcon {
+  color: white !important;
+  display: none;
+  font-size: 1.5rem;
+}
+
+#logo {
+  height: 100%;
+
+}
+
+.navbarList {
+  list-style: none;
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbarList li {
+  margin: 0rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarList li a{
+  text-decoration: none;
+  color: white;
+}
+.navbarBtn{
+  background: transparent;
+  border: none;
+}
+.cross{
+  color: white !important;
+  position: absolute;
+  font-size: 2rem;
+  right: 5vw;
+  top: 2vh;
+}
+
+/* navbar css ends  */
+
+/* home page css starts  */
+.home ,.login,.signup,.stories,.publish{
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to right, #0B0023, #15003A);
+
+}
+
+.vectorBackground {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images//vector.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vectorBackground img {
+  height: 100%;
+  width: 100%;
+}
+
+.homeContent {
+  width: 50rem;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+.homeContent p{
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.homeContent h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.homeContent button{
+  margin: 0.5rem;
+}
+
+/* home page css ends */
+
+/* sideNavbar css starts  */
+.sideNavbar{
+  height: 100vh;
+  width: 100vw;
+  background: #15003af3;
+  position: fixed;
+  left: 100vw;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sideNavbarInner ul{
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+}
+.sideNavbarInner ul li{
+  margin: 1rem;
+  
+}
+/* sideNavbar css ends */
+/* login css starts  */
+
+.loginInner{
+  width: 25rem;
+  display: flex;
+}
+.loginInnerLeft{
+  width: 100%;
+  height: 100%;
+}
+.loginInnerLeft{
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+.loginInnerLeft p{
+  font-size: 0.8rem;
+}
+.loginInnerLeft h3{
+  margin: 0.5rem;
+}
+.loginInnerLeftContent{
+  width: fit-content;
+  margin: auto;
+}
+.loginForm >*{
+  margin-top: 1rem;
+}
+.loginInnerLeftContent h2{
+  margin-bottom: 0;
+}
+.formItem{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0rem;
+}
+.loginForm label{
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.formInput{
+  width: 18rem;
+  height: 2rem;
+  
+}
+.forgetBtn{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.loginInnerRight{
+  background-color: rgb(223, 200, 255);
+}
+.loginForm button{
+  width: 100%; 
+  border-radius: 0rem;
+}
+.googleBtn{
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+
+}
+.googleBtn img{
+  height: 1rem;
+  width: 1rem;
+}
+#passwordMatchAlert{
+  display: none;
+}
+#fillAlert,#fillAlert2,#invalidCred{
+  display: none;
+}
+/* login css ends */
+
+/* stories css starts  */
+.storiesMain,.publishMain{
+  display: flex;
+  flex-direction:column;
+  justify-content: end; 
+}
+.publishInner,.storiesInner{
+  height: 90%;
+  width: 90VW;
+  background-color: rgba(0, 0, 0, 0.393);
+  backdrop-filter: blur(5px);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  position: absolute;
+  overflow-y: scroll;
+}
+.storiesInner h1{
+  margin-bottom: 1rem;
+}
+
+.storiesInner img{
+  height: 60vh;
+  width: 50vw;
+}
+.storiesInnerBottom{
+  margin-top: 2rem;
+}
+.searchAndFilters{
+  margin-top: 1rem;
+  display:flex ;
+  align-items: center;
+  height: 3rem;
+
+}
+.categoryDropdown{
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  background-color: #7447BE;
+  color: white;
+  padding: 0rem 1rem;
+}
+.storySearch{
+  display: flex;
+  align-items: start;
+  background-color: rgba(255, 255, 255, 0.368);
+  max-width: fit-content;
+  border-radius: 2rem;
+
+}
+.storySearch input{
+  height: 2.5rem;
+  width: 20rem;
+  background-color: transparent;
+  border-radius: 2rem 0 0 2rem;
+  border: none;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+}
+.storiesContainer{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+/* stories css ends */
+/* storycard css starts  */
+.storyCard{
+  height: 30rem;
+  width: 20rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.storyCardImage img{
+  width: 100%;
+  height: 15rem;
+}
+.storyCardContent{
+  padding: 1rem;
+}
+.startupName{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.storyCardEnd{
+  padding: 1rem;
+}
+/* storycard css ends */
+
+/* publish page css starts  */
+
+.publishInner{
+  color: white;
+}
+.storyFormElement{
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.storyFormInput{
+  height: 2.5rem;
+  font-size: 1.5rem;
+  margin: 0.5rem 0rem;
+  background-color: rgba(255, 255, 255, 0.256);
+  border: none;
+  color: white;
+}
+.storyFormTextarea{
+  margin: 0.5rem 0rem;
+  background-color: rgba(255, 255, 255, 0.256);
+  border: none;
+  color: white;
+}
+.sectorDropdown{
+  font-size: 1rem;
+  color: black;
+}
+.problemsAndSolutions {
+  text-align: start;
+}
+/* publish page css ends */
+
+@media (min-width: 1200px) {}
+
+@media (max-width: 1024px) {
+  .navbarList li {
+    margin: 0rem 1rem;
+    font-size: 0.8rem;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .navbarList {
+    display: none;
+  }
+
+  .hamburgerIcon {
+    display: block;
+  }
+
+  .homeContent h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .homeContent h1 {
+    font-size: 2rem;
+  }
+
+}
+
+/* investor css start  */
+.investorInner{
+  background-image: url(images/investor4.jpg);
+  opacity: 0.7;
+  background-size: 100% 100%;
+  height: 500px;
+  text-align:center;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  
+}
+
+
+/* investor css end */
