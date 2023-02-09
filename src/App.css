@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 } 
+body{
+  background-color: #0B0023;
+}
 ::placeholder{
   font-size: 0.7rem;
 }
@@ -444,3 +447,67 @@ p,h1,h2,h3,h4,h5,h6{
 
 
 /* investor css end */
+
+/* about page start */
+.aboutImg img{
+  height: 35rem;
+}
+.about1{
+  display: flex;
+  margin-top: 5rem;
+  
+}
+.about1 img{
+  height: 20rem;
+  width: 30rem;
+  border-radius: 2rem;
+  box-shadow:  1px 1px 6px #e2a851;
+  margin: 2px 20px 2px 2px;
+}
+.about12{
+  margin: 7rem 4rem 4rem 4rem;
+}
+.about12 h2{
+  margin-bottom: 1rem;
+}
+
+.about2{
+  display: flex;
+  margin-top: 5rem;
+}
+.about2 img{
+  height: 20rem;
+  width: 30rem;
+  border-radius: 2rem;
+  box-shadow:  1px 1px 6px #e2a851;
+  margin: 2px 20px 2px 2px;
+}
+.about22{
+  margin: 7rem 4rem 4rem 4rem;
+}
+.about22 h2{
+  margin-bottom: 1rem;
+}
+
+.about3{
+  display: flex;
+  margin-top: 5rem;
+}
+.about3 img{
+  height: 20rem;
+  width: 80rem;
+  border-radius: 2rem;
+  box-shadow:  1px 1px 6px #e2a851;
+  margin: 2px 20px 2px 2px;
+}
+.about32{
+  margin: 4rem 4rem 4rem 6rem;
+}
+.about32 h2{
+  margin-bottom: 1rem;
+}
+.end1 img{
+
+  width: 30rem;
+}
+/* about page ends */
