@@ -4,6 +4,7 @@ import aboutImage2 from "../images/aboutPage_image2.jpg";
 import aboutImage3 from "../images/aboutPage_image3.jpg";
 import aboutImage4 from "../images/aboutPage_image4.jpg";
 import logo from "../images/logo.png"
+import Help from './Help';
 
 export default function About() {
   return (
@@ -67,6 +68,7 @@ export default function About() {
           <br />
           <button className="btn" >Get Started</button>
           <br /><br /><br />
+          <Help />
           <div className="end">
             <div className="end1">
             <img id='logo' src={logo} alt="logo"></img>
